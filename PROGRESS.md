@@ -9,8 +9,8 @@ updated: 2026-10-24
 - Arabic Quran review game for a girl (Juz Tabarak + Juz Amma), static HTML/JS, RTL, feminine wording
 - Hosted on GitHub Pages (main, root, .nojekyll); PWA with service worker
 - Speech: Transformers.js 4.3.1 (jsDelivr `dist/transformers.min.js`), model mirrored in `models/`
-- github: https://github.com/Zoro77404/QuranReview
-- site: https://zoro77404.github.io/QuranReview/
+- github: https://github.com/Zoro77404/QuranReview2 (private dev copy with 🎤 + map)
+- Live site stays in the separate repo Zoro77404/QuranReview (Desktop\QuranReview) — never push this folder there
 
 ## Done
 - Published index.html (copy of quran-review-game.html) + manifest, 🐥 icons, sw.js
