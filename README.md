@@ -2,8 +2,9 @@
 
 لعبة لمراجعة حفظ جزء تبارك وجزء عمّ (من سورة الملك إلى سورة الناس).
 
-> **نسخة التطوير** — فيها 🎤 والخريطة، وليست منشورة بعد.
-> النسخة المنشورة على الجوال: https://zoro77404.github.io/QuranReview/
+> **نسخة التجربة** — فيها 🎤 والخريطة: https://zoro77404.github.io/QuranReview2/
+>
+> النسخة الأساسية (بدون 🎤): https://zoro77404.github.io/QuranReview/
 
 - 🗺️ خريطة رحلة من الملك إلى الناس: كل سورة جزيرة، وفيها ٣ نجوم ⭐ حسب أفضل نتيجة.
 - 🎤 اضغطي المايك واقرئي: التطبيق يسمعك ويلوّن الكلمات (أخضر صح، أحمر غلط، رمادي ناقص). ٩٠٪ أو أكثر = نجمة واحتفال.
@@ -15,8 +16,10 @@
 
 ## For the developer
 
-- **Private dev copy.** Not hosted. The live site is the separate repo
+- **Test copy.** Hosted on GitHub Pages at https://zoro77404.github.io/QuranReview2/ (public repo).
+  The main live site is the separate repo
   [Zoro77404/QuranReview](https://github.com/Zoro77404/QuranReview) (`Desktop\QuranReview`), currently on the version without 🎤 / map.
+- Same origin as the live site, so caches use their own `quran-review2-` prefix and the app is named «تجربة».
 - This folder must **never push to the live repo** — `origin` is QuranReview2 and a `pre-push` hook blocks the live URL.
 - Run locally: `python -m http.server 8000` in this folder, then open http://localhost:8000/ (the mic needs localhost or https).
 - To ship later: copy the changed files into `Desktop\QuranReview`, bump `CACHE` in `sw.js` there above `quran-review-v4`, and push from there.

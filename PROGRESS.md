@@ -9,7 +9,8 @@ updated: 2026-10-24
 - Arabic Quran review game for a girl (Juz Tabarak + Juz Amma), static HTML/JS, RTL, feminine wording
 - Hosted on GitHub Pages (main, root, .nojekyll); PWA with service worker
 - Speech: Transformers.js 4.3.1 (jsDelivr `dist/transformers.min.js`), model mirrored in `models/`
-- github: https://github.com/Zoro77404/QuranReview2 (private dev copy with 🎤 + map)
+- github: https://github.com/Zoro77404/QuranReview2 (public test copy with 🎤 + map)
+- site: https://zoro77404.github.io/QuranReview2/ (sw cache `quran-review2-v1`, own prefix — same origin as live)
 - Live site stays in the separate repo Zoro77404/QuranReview (Desktop\QuranReview) — never push this folder there
 
 ## Done
@@ -23,7 +24,7 @@ updated: 2026-10-24
 - `listen.js` — model download (progress bar, Cache Storage `transformers-cache`), recording, decode, transcribe
 - `data/quran-simple-clean-67-114.json` — alquran.cloud quran-simple-clean, bismillah stripped
 - `models/whisper-tiny-ar-quran/` — ONNX (from Sharjeelbaig/whisper-tiny-ar-quran-onnx), see SOURCE.md
-- `sw.js` — cache `quran-review-v3`; bump when app files change; skips /models/
+- `sw.js` — cache `quran-review2-v1`; bump when app files change; skips /models/
 - localStorage: `qgame_progress_v1` (stars, streak, day, stage, at, N), `qgame_v2` (uthmani text), `qgame_nogpu`
 
 ## Decisions

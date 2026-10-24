@@ -1,5 +1,6 @@
 // Service worker: opens instantly from cache, refreshes in the background, works offline after the first visit.
-const CACHE = 'quran-review-v3';
+// Own prefix: the live site shares this origin (zoro77404.github.io), so never touch its 'quran-review-v*' caches.
+const CACHE = 'quran-review2-v1';
 const SHELL = ['./', 'index.html', 'match.js', 'listen.js', 'data/quran-simple-clean-67-114.json', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png'];
 
@@ -10,7 +11,7 @@ self.addEventListener('install', e => {
 self.addEventListener('activate', e => {
   // transformers-cache holds the speech model; it is managed by Transformers.js, not here.
   e.waitUntil(caches.keys()
-    .then(keys => Promise.all(keys.filter(k => k !== CACHE && k.startsWith('quran-review')).map(k => caches.delete(k))))
+    .then(keys => Promise.all(keys.filter(k => k !== CACHE && k.startsWith('quran-review2-')).map(k => caches.delete(k))))
     .then(() => self.clients.claim()));
 });
 
